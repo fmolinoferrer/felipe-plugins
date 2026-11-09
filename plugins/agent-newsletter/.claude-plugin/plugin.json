@@ -1,0 +1,20 @@
+{
+  "name": "agent-newsletter",
+  "version": "0.1.0",
+  "description": "Turn a week of agent coordination files (handoffs, decisions, failure notes) into a public newsletter issue, with a no-financials filter, and build a live workshop from past issues.",
+  "author": {
+    "name": "Felipe Molino"
+  },
+  "license": "MIT",
+  "keywords": [
+    "newsletter",
+    "agents",
+    "multi-agent",
+    "handoff",
+    "decisions",
+    "postmortem",
+    "lessons",
+    "redaction",
+    "workshop"
+  ]
+}

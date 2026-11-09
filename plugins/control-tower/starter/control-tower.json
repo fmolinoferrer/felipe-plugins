@@ -1,0 +1,37 @@
+{
+  "company": "Your Company",
+  "currency": "$",
+  "weekly_cap": 100,
+  "stale_hours": 24,
+  "keep_moving_hours": 2,
+  "handoff_limit_bytes": 3072,
+  "roles": [
+    {
+      "slug": "chief-of-staff",
+      "title": "Chief of Staff",
+      "cap": 20,
+      "model": "Haiku",
+      "type": "standing"
+    },
+    {
+      "slug": "dev-lead",
+      "title": "Dev Lead",
+      "cap": 50,
+      "model": "Sonnet",
+      "type": "standing"
+    },
+    {
+      "slug": "qa",
+      "title": "QA",
+      "cap": 30,
+      "model": "Sonnet",
+      "type": "standing"
+    }
+  ],
+  "keys": [
+    "Publish",
+    "Money",
+    "Secrets",
+    "Customer sends"
+  ]
+}

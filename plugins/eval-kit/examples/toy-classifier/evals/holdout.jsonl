@@ -1,0 +1,6 @@
+{"id":"h-01","input":"Refund my annual plan please","expected":"billing","grader":{"type":"exact","field":"label"},"tags":["billing"]}
+{"id":"h-02","input":"Getting an error when saving a dashboard","expected":"bug","grader":{"type":"exact","field":"label"},"tags":["bug"]}
+{"id":"h-03","input":"How do I change the email address on my login?","expected":"account","grader":{"type":"exact","field":"label"},"tags":["account"]}
+{"id":"h-04","input":"Could you add support for CSV export?","expected":"feature_request","grader":{"type":"exact","field":"label"},"tags":["feature_request"]}
+{"id":"h-05","input":"Where are your offices?","expected":"other","grader":{"type":"exact","field":"label"},"tags":["other"]}
+{"id":"h-06","input":"Your pricing page is broken on mobile","expected":"bug","grader":{"type":"exact","field":"label"},"tags":["bug","multi-intent"]}

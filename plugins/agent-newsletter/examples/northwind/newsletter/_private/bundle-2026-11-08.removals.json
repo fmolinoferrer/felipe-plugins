@@ -1,0 +1,100 @@
+{
+  "_warning": "PRIVATE. Contains removed values (keys/emails masked). Do not publish.",
+  "source": "examples/northwind/newsletter/_private/bundle-2026-11-08.md",
+  "generated": "2026-11-09T12:00:49.216Z",
+  "total": 15,
+  "removals": [
+    {
+      "line": 29,
+      "rule": "currency",
+      "reason": "currency amount",
+      "value": "$3,400/mo"
+    },
+    {
+      "line": 29,
+      "rule": "currency",
+      "reason": "currency amount",
+      "value": "$2,150/mo"
+    },
+    {
+      "line": 36,
+      "rule": "api-key",
+      "reason": "key-like token (API key, secret, access token)",
+      "value": "sk_l…(32 chars)"
+    },
+    {
+      "line": 54,
+      "rule": "user-count",
+      "reason": "user/customer count",
+      "value": "1,240 paying customers"
+    },
+    {
+      "line": 55,
+      "rule": "money-percent",
+      "reason": "percentage tied to a money word",
+      "value": "18%"
+    },
+    {
+      "line": 55,
+      "rule": "money-percent",
+      "reason": "percentage tied to a money word",
+      "value": "14%"
+    },
+    {
+      "line": 61,
+      "rule": "email",
+      "reason": "email address",
+      "value": "o***@h***.com"
+    },
+    {
+      "line": 62,
+      "rule": "currency",
+      "reason": "currency amount",
+      "value": "$49/seat"
+    },
+    {
+      "line": 62,
+      "rule": "currency",
+      "reason": "currency amount",
+      "value": "$39/seat"
+    },
+    {
+      "line": 78,
+      "rule": "money-topic",
+      "reason": "line discusses company finances (revenue/MRR/ARR/runway/burn/valuation/margin/profit)",
+      "trigger": "burn",
+      "original": "- Monthly burn is down to $61k; runway now 19 months."
+    },
+    {
+      "line": 85,
+      "rule": "investors",
+      "reason": "line discusses investors or fundraising",
+      "trigger": "Investor",
+      "original": "- Investor update moved to the first Monday of the month; Felix sends it, not an agent."
+    },
+    {
+      "line": 109,
+      "rule": "money-percent",
+      "reason": "percentage tied to a money word",
+      "value": "20%"
+    },
+    {
+      "line": 130,
+      "rule": "user-count",
+      "reason": "user/customer count",
+      "value": "37 accounts"
+    },
+    {
+      "line": 133,
+      "rule": "email",
+      "reason": "email address",
+      "value": "b***@n***.com"
+    },
+    {
+      "line": 136,
+      "rule": "currency",
+      "reason": "currency amount",
+      "value": "$800"
+    }
+  ]
+}

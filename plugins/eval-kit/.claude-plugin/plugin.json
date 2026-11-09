@@ -1,0 +1,8 @@
+{
+  "name": "eval-kit",
+  "version": "0.1.0",
+  "description": "AI eval setup for teams shipping AI features: golden + sealed holdout sets, graders, a zero-dependency Python runner (Node fallback) with run-to-run comparison, and a release gate.",
+  "author": { "name": "Felipe Molino" },
+  "license": "MIT",
+  "keywords": ["evals", "evaluation", "llm", "testing", "golden-set", "holdout", "release-gate", "ai-quality"]
+}

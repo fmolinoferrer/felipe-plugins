@@ -1,0 +1,18 @@
+# eval-kit config. Format: a small YAML subset that eval-kit parses without dependencies:
+#   key: value, nested maps by indentation (spaces), # comments, quoted or bare strings,
+#   numbers, true/false. NOT supported: lists, multi-line strings (| or >), anchors.
+
+target:
+  type: command            # command | script | http
+  command: node my_feature.mjs   # runs from the project root (the folder that contains evals/)
+  input_mode: stdin        # stdin | arg  (arg appends the input as the last argument)
+  # shell: true            # needed for pipes, npm/npx, .cmd/.bat files
+  # script: scripts/call_feature.mjs     # for type: script (run with node)
+  # url: http://localhost:8787/classify  # for type: http (POST {"input": ...}, response body = output)
+
+pass_threshold: 0.90       # golden pass rate needed (0..1)
+holdout_threshold: 0.85    # sealed holdout pass rate needed by /eval-kit:gate
+timeout_ms: 30000          # per case
+
+judge:
+  command: ""              # empty = llm_judge cases are skipped. Example: node evals/judge.mjs

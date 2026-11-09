@@ -1,0 +1,44 @@
+{
+  "_warning": "PRIVATE. Contains removed values (keys/emails masked). Do not publish.",
+  "source": "_private/issue-2026-11-08.draft.md",
+  "generated": "2026-11-09T12:01:36.490Z",
+  "total": 6,
+  "removals": [
+    {
+      "line": 10,
+      "rule": "currency",
+      "reason": "currency amount",
+      "value": "$3,400/mo"
+    },
+    {
+      "line": 10,
+      "rule": "currency",
+      "reason": "currency amount",
+      "value": "$2,150/mo"
+    },
+    {
+      "line": 12,
+      "rule": "money-percent",
+      "reason": "percentage tied to a money word",
+      "value": "18%"
+    },
+    {
+      "line": 12,
+      "rule": "money-percent",
+      "reason": "percentage tied to a money word",
+      "value": "14%"
+    },
+    {
+      "line": 17,
+      "rule": "currency",
+      "reason": "currency amount",
+      "value": "$800"
+    },
+    {
+      "line": 17,
+      "rule": "user-count",
+      "reason": "user/customer count",
+      "value": "37 accounts"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "control-tower",
+  "version": "0.1.0",
+  "description": "Run a small AI agent team through files: a 3-role starter with per-role inboxes, a decisions queue with defaults and undo lines, 3 KB handoffs, weekly spend caps, and a status view.",
+  "author": { "name": "Felipe Molino" },
+  "license": "MIT",
+  "keywords": ["agents", "operating-model", "orchestration", "decisions", "founder", "startup", "chief-of-staff"]
+}

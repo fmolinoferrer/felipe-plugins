@@ -1,0 +1,8 @@
+{
+  "name": "mcp-forge",
+  "version": "0.1.0",
+  "description": "Plan, scaffold and review MCP servers so a product works inside Claude and ChatGPT: approved tool plans, TypeScript stdio servers with propose-then-confirm writes, and severity-ranked reviews.",
+  "author": { "name": "Felipe Molino" },
+  "license": "MIT",
+  "keywords": ["mcp", "model-context-protocol", "typescript", "scaffold", "code-review", "claude", "chatgpt"]
+}

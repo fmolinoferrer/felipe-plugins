@@ -1,0 +1,17 @@
+# eval-kit config for the Northwind Analytics toy ticket classifier.
+# Format: a small YAML subset (key: value, nested maps by 2-space indent, # comments).
+# Lists and multi-line strings are NOT supported by the eval-kit parser.
+
+target:
+  type: command            # command | script | http
+  command: node classifier.mjs   # run from the folder that contains evals/
+  input_mode: stdin        # stdin | arg (arg appends the input as the last argument)
+  # shell: true            # set if the command needs a shell (pipes, npm, .cmd files)
+  # url: http://localhost:8787/classify   # for type: http (POST {"input": ...})
+
+pass_threshold: 0.85       # golden pass rate needed (0..1)
+holdout_threshold: 0.80    # sealed holdout pass rate needed by /eval-kit:gate
+timeout_ms: 10000          # per case
+
+judge:
+  command: ""              # empty = llm_judge cases are skipped. Example: node judge.mjs

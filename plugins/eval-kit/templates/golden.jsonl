@@ -1,0 +1,6 @@
+{"id":"example-exact","input":"replace with a real input","expected":"replace with the correct output","grader":"exact","tags":["happy-path"]}
+{"id":"example-json-field","input":"replace with a real input","expected":"billing","grader":{"type":"exact","field":"label"},"tags":["happy-path"]}
+{"id":"example-contains","input":"replace with a real input","expected":["must mention this","and this"],"grader":{"type":"contains","ignore_case":true},"tags":["content"]}
+{"id":"example-regex","input":"replace with a real input","expected":"^\\d{4}-\\d{2}-\\d{2}$","grader":"regex","tags":["format"]}
+{"id":"example-numeric","input":"replace with a real input","expected":0.8,"grader":{"type":"numeric","field":"confidence","tolerance":0.1},"tags":["calibration"]}
+{"id":"example-judge","input":"replace with a real input","expected":"Describe what a good answer must do","grader":{"type":"llm_judge","rubric":"graders/rubric.md"},"tags":["quality"]}

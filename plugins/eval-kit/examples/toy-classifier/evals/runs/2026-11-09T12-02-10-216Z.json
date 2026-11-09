@@ -1,0 +1,220 @@
+{
+  "timestamp": "2026-11-09T12-02-10-216Z",
+  "set": "golden",
+  "summary": {
+    "total": 15,
+    "graded": 14,
+    "passed": 12,
+    "failed": 2,
+    "skipped": 1,
+    "rate": 0.8571428571428571
+  },
+  "results": [
+    {
+      "id": "g-01-refund",
+      "set": "golden",
+      "tags": [
+        "billing"
+      ],
+      "input": "Can I get a refund for last month's invoice?",
+      "expected": "billing",
+      "actual": "billing",
+      "grader": "exact",
+      "status": "pass",
+      "ms": 377
+    },
+    {
+      "id": "g-02-500-error",
+      "set": "golden",
+      "tags": [
+        "bug"
+      ],
+      "input": "The reports page shows a 500 error since this morning",
+      "expected": "bug",
+      "actual": "bug",
+      "grader": "exact",
+      "status": "pass",
+      "ms": 357
+    },
+    {
+      "id": "g-03-password-reset",
+      "set": "golden",
+      "tags": [
+        "account"
+      ],
+      "input": "I forgot my password and the reset email never arrives",
+      "expected": "account",
+      "actual": "account",
+      "grader": "exact",
+      "status": "pass",
+      "ms": 212
+    },
+    {
+      "id": "g-04-slack-alerts",
+      "set": "golden",
+      "tags": [
+        "feature_request"
+      ],
+      "input": "It would be great if you could add support for Slack alerts",
+      "expected": "feature_request",
+      "actual": "feature_request",
+      "grader": "exact",
+      "status": "pass",
+      "ms": 154
+    },
+    {
+      "id": "g-05-support-hours",
+      "set": "golden",
+      "tags": [
+        "other"
+      ],
+      "input": "What time zone are your support hours in?",
+      "expected": "other",
+      "actual": "other",
+      "grader": "exact",
+      "status": "pass",
+      "ms": 308
+    },
+    {
+      "id": "g-06-sso-contains",
+      "set": "golden",
+      "tags": [
+        "account"
+      ],
+      "input": "My SSO login keeps failing",
+      "expected": "\"label\":\"account\"",
+      "actual": "{\"label\":\"account\",\"confidence\":1}",
+      "grader": "contains",
+      "status": "pass",
+      "ms": 349
+    },
+    {
+      "id": "g-07-blank-charts-regex",
+      "set": "golden",
+      "tags": [
+        "bug"
+      ],
+      "input": "Charts are blank after the update",
+      "expected": "\"label\"\\s*:\\s*\"bug\"",
+      "actual": "{\"label\":\"bug\",\"confidence\":1}",
+      "grader": "regex",
+      "status": "pass",
+      "ms": 141
+    },
+    {
+      "id": "g-08-double-charge-confidence",
+      "set": "golden",
+      "tags": [
+        "billing",
+        "calibration"
+      ],
+      "input": "I was charged twice, please refund",
+      "expected": 1,
+      "actual": 1,
+      "grader": "numeric",
+      "status": "pass",
+      "detail": "|1 - 1| = 0 (tolerance 0.05)",
+      "ms": 174
+    },
+    {
+      "id": "g-09-crash-billing-confidence",
+      "set": "golden",
+      "tags": [
+        "bug",
+        "calibration"
+      ],
+      "input": "The app crashes when I open billing settings",
+      "expected": 0.8,
+      "actual": 0.83,
+      "grader": "numeric",
+      "status": "pass",
+      "detail": "|0.83 - 0.8| = 0.03 (tolerance 0.05)",
+      "ms": 314
+    },
+    {
+      "id": "g-10-office-confidence",
+      "set": "golden",
+      "tags": [
+        "other",
+        "calibration"
+      ],
+      "input": "Do you have an office in Lisbon?",
+      "expected": 0.3,
+      "actual": 0.3,
+      "grader": "numeric",
+      "status": "pass",
+      "detail": "|0.3 - 0.3| = 0 (tolerance 0)",
+      "ms": 177
+    },
+    {
+      "id": "g-11-dark-mode-ignore-case",
+      "set": "golden",
+      "tags": [
+        "feature_request"
+      ],
+      "input": "Please add a dark mode, I wish the UI had it",
+      "expected": "FEATURE_REQUEST",
+      "actual": "feature_request",
+      "grader": "exact",
+      "status": "pass",
+      "ms": 135
+    },
+    {
+      "id": "g-12-broken-export-tie",
+      "set": "golden",
+      "tags": [
+        "bug",
+        "multi-intent"
+      ],
+      "input": "The export button is broken since you changed our plan",
+      "expected": "bug",
+      "actual": "billing",
+      "grader": "exact",
+      "status": "fail",
+      "ms": 177
+    },
+    {
+      "id": "g-13-locked-2fa",
+      "set": "golden",
+      "tags": [
+        "account"
+      ],
+      "input": "My account is locked after too many 2FA attempts",
+      "expected": "account",
+      "actual": "account",
+      "grader": "exact",
+      "status": "pass",
+      "ms": 194
+    },
+    {
+      "id": "g-14-invoice-error-confidence",
+      "set": "golden",
+      "tags": [
+        "bug",
+        "calibration",
+        "multi-intent"
+      ],
+      "input": "Invoice download fails with an error",
+      "expected": 0.9,
+      "actual": 0.83,
+      "grader": "numeric",
+      "status": "fail",
+      "detail": "|0.83 - 0.9| = 0.07 (tolerance 0.05)",
+      "ms": 229
+    },
+    {
+      "id": "g-15-judge-ambiguous",
+      "set": "golden",
+      "tags": [
+        "multi-intent"
+      ],
+      "input": "The invoice PDF is blank and I need it for my accountant",
+      "expected": "Either bug or billing is acceptable; other is not.",
+      "actual": "{\"label\":\"billing\",\"confidence\":0.75}",
+      "grader": "llm_judge",
+      "status": "skipped",
+      "detail": "no judge.command configured",
+      "ms": 144
+    }
+  ]
+}

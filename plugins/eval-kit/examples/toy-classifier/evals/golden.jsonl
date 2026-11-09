@@ -1,0 +1,15 @@
+{"id":"g-01-refund","input":"Can I get a refund for last month's invoice?","expected":"billing","grader":{"type":"exact","field":"label"},"tags":["billing"]}
+{"id":"g-02-500-error","input":"The reports page shows a 500 error since this morning","expected":"bug","grader":{"type":"exact","field":"label"},"tags":["bug"]}
+{"id":"g-03-password-reset","input":"I forgot my password and the reset email never arrives","expected":"account","grader":{"type":"exact","field":"label"},"tags":["account"]}
+{"id":"g-04-slack-alerts","input":"It would be great if you could add support for Slack alerts","expected":"feature_request","grader":{"type":"exact","field":"label"},"tags":["feature_request"]}
+{"id":"g-05-support-hours","input":"What time zone are your support hours in?","expected":"other","grader":{"type":"exact","field":"label"},"tags":["other"]}
+{"id":"g-06-sso-contains","input":"My SSO login keeps failing","expected":"\"label\":\"account\"","grader":"contains","tags":["account"]}
+{"id":"g-07-blank-charts-regex","input":"Charts are blank after the update","expected":"\"label\"\\s*:\\s*\"bug\"","grader":"regex","tags":["bug"]}
+{"id":"g-08-double-charge-confidence","input":"I was charged twice, please refund","expected":1.0,"grader":{"type":"numeric","field":"confidence","tolerance":0.05},"tags":["billing","calibration"]}
+{"id":"g-09-crash-billing-confidence","input":"The app crashes when I open billing settings","expected":0.8,"grader":{"type":"numeric","field":"confidence","tolerance":0.05},"tags":["bug","calibration"]}
+{"id":"g-10-office-confidence","input":"Do you have an office in Lisbon?","expected":0.3,"grader":{"type":"numeric","field":"confidence","tolerance":0},"tags":["other","calibration"]}
+{"id":"g-11-dark-mode-ignore-case","input":"Please add a dark mode, I wish the UI had it","expected":"FEATURE_REQUEST","grader":{"type":"exact","field":"label","ignore_case":true},"tags":["feature_request"]}
+{"id":"g-12-broken-export-tie","input":"The export button is broken since you changed our plan","expected":"bug","grader":{"type":"exact","field":"label"},"tags":["bug","multi-intent"]}
+{"id":"g-13-locked-2fa","input":"My account is locked after too many 2FA attempts","expected":"account","grader":{"type":"exact","field":"label"},"tags":["account"]}
+{"id":"g-14-invoice-error-confidence","input":"Invoice download fails with an error","expected":0.9,"grader":{"type":"numeric","field":"confidence","tolerance":0.05},"tags":["bug","calibration","multi-intent"]}
+{"id":"g-15-judge-ambiguous","input":"The invoice PDF is blank and I need it for my accountant","expected":"Either bug or billing is acceptable; other is not.","grader":{"type":"llm_judge","rubric":"graders/rubric.md"},"tags":["multi-intent"]}

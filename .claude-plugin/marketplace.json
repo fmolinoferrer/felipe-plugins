@@ -1,0 +1,47 @@
+{
+  "name": "felipe-plugins",
+  "owner": {
+    "name": "Felipe Molino"
+  },
+  "metadata": {
+    "description": "Open-source (MIT) Claude Code plugins for running a small team with AI agents and shipping AI features.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "control-tower",
+      "source": "./plugins/control-tower",
+      "description": "Run a small AI agent team through files: 3-role starter, inboxes, decisions queue with defaults and undo lines, 3 KB handoffs, spend caps, status view.",
+      "version": "0.1.0",
+      "category": "operations"
+    },
+    {
+      "name": "eval-kit",
+      "source": "./plugins/eval-kit",
+      "description": "AI eval setup for teams shipping AI features: golden + holdout sets, graders, runner, release gate.",
+      "version": "0.1.0",
+      "category": "development"
+    },
+    {
+      "name": "mcp-forge",
+      "source": "./plugins/mcp-forge",
+      "description": "Plan, scaffold and review TypeScript MCP servers so a product works inside Claude and ChatGPT.",
+      "version": "0.1.0",
+      "category": "development"
+    },
+    {
+      "name": "agent-ops",
+      "source": "./plugins/agent-ops",
+      "description": "Free agent-readiness check against a 6-area rubric, plus a reference operating model for companies run with AI agents.",
+      "version": "0.1.0",
+      "category": "operations"
+    },
+    {
+      "name": "agent-newsletter",
+      "source": "./plugins/agent-newsletter",
+      "description": "Draft a newsletter issue from your agents' handoffs, decisions and failure notes, with a no-financials filter.",
+      "version": "0.1.0",
+      "category": "personal-dev"
+    }
+  ]
+}

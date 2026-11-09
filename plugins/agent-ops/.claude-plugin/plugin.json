@@ -1,0 +1,8 @@
+{
+  "name": "agent-ops",
+  "version": "0.1.0",
+  "description": "Is your team ready to run with AI agents? A free readiness check against a 6-area rubric, plus a reference operating model for small companies run with Claude Code agents.",
+  "author": { "name": "Felipe Molino" },
+  "license": "MIT",
+  "keywords": ["agents", "operating-model", "claude-code", "readiness", "assessment", "governance"]
+}
